@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { Fragment, useState, useRef } from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-export default function App() {
+
+// const Login = import('./pages/login/LoginCompoenet');
+
+function App() {
+  const ref = useRef();
+
   return (
-    <h1>woowahan learning</h1>
+    <Router>
+    <switch>
+      <h1>woowahan learning</h1>
+      <a href='http://localhost:3002/auth/google'>google login</a>
+    </switch>
+  </Router>
+    
   );
-};
+}
+
+export default App;

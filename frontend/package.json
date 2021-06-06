@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
-  "description": "",
+  "name": "wootech",
+  "version": "1.0.1",
+  "description": "hyosung ",
   "main": ".eslintrc.js",
   "scripts": {
     "build": "webpack",
@@ -12,8 +12,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@types/qs": "^6.9.6",
+    "@types/react-router-dom": "^5.1.7",
+    "axios": "^0.21.1",
+    "draft-js": "^0.11.7",
+    "es6-shim": "^0.35.6",
+    "qs": "^6.10.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "slate": "^0.63.0",
+    "slate-react": "^0.65.0"
   },
   "devDependencies": {
     "@babel/core": "7.14.3",
