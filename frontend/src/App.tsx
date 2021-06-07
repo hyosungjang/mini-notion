@@ -11,11 +11,15 @@ function App() {
 
 
   return (
-    <Router>
-      <h1>woowahan learning</h1>
-      <h1>{cookies}</h1>
-      <a href='http://localhost:3002/auth/google'>google login</a>
-  </Router>
+    <Fragment>
+
+      <Router>
+        <h1>woowahan learning</h1>
+        <h1>{cookies}</h1>
+        <a href='http://localhost:3002/auth/google'>google login</a>
+        
+      </Router>
+    </Fragment>
     
   );
 }
