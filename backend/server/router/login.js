@@ -12,11 +12,9 @@ router.get('/google/callback',
 
 function authSuccess(req, res) {
     console.log('=========================== Login AuthSuccess ===========================');
-    if(req.user != null) {
-        res.json({userName : req.user});
-    } else {
-        res.redirect('http://localhost:8080');
-    }
+    // case: user is not null , 로그인 성공으로 간주
+    res.cookie('loginUserInfo', req.user != null ? req.user : null);
+    res.redirect('http://localhost:8080');
 }
 
 module.exports = router;
